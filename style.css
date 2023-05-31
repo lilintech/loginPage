@@ -1,0 +1,73 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1
+{
+color: aliceblue;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+body
+{
+    min-height: 100vh;
+    background: black;
+}
+.outer
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.inner
+{
+    position: relative;
+    display: flex;
+}
+.inner span
+{
+    position:relative;
+    width: 30px;
+    height: 30px;
+    background: purple;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px grey,
+    0 0 50px purple
+    0 0 100px purple;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+.bubbles span:nth-child(even)
+{
+    background: rgb(21, 173, 166);
+    box-shadow: 0 0 0 10px rgb(128, 128, 128),
+    0 0 50px rgb(21, 173, 166)
+    0 0 100px rgb(21, 173, 166);
+
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+}
+.form
+{
+    display: flex;
+    justify-content: center;
+
+}
+.form label
+{
+    color: aliceblue;
+}
